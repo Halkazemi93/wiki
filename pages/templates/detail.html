@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Detail</title>
+	</head>
+	<body>
+		<a href="{% url 'page-list' %}">View List</a>
+		<ul>
+			<li>
+				<h1>{{ title.title }}</h1>
+			</li>
+			<br>
+			<li>
+				<p> {{ title.content|linebreaks }}</p>
+			</li>
+			<br>
+			<li> 
+				<p> {{ title.last_update|timesince }} ago</p>
+			</li>
+	</body>
+</html>
